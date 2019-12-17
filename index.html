@@ -32,10 +32,17 @@
 ,<input type="button" value="テキストの変更"
 oneclick="txtchange1();">
 城西大学</div>
+<div id="image1">
+<input type="button" value="画像の変更"
+oneclick="imagchange1();">
+<img src='./image/josai.png'id="logo" alt="Josai Logo"></div>
 
+<h1>タイマーイベントによる実行</h1>
+<form><input type="button" value="Timer"
+oneclick="setTimeout('mes()',3000)"></form>
 <form name="timer">
 <input type="button" value="スタート"
-oneclick="startfnc()">
+oneclick="hyouji()">
 <br>
 <input type="text" name="moji" size="30"
 value=""></form>
@@ -70,6 +77,17 @@ oneclick"sayhello71();">
 <input type="text" id="answer">
 <input type="button" value="解答" oneclick="nazo();">
 
+<script src="ex08-1.js"></script>
+</head>
+<body>
+<h1>血液型を当てる08-1</h1>
+<p>あなたの血液型にAという文字は含まれていますか？(yes/no)
+<input type="text" id="a"></p>
+<p>あなたの血液型にBという文字は含まれていますか？(yes/no)
+<input type="text" id="b"></p>
+<p><input type="button" value="判定" oneclick="bloodtype();"></p>
+</body>
+
 <script src="ex09-2.js"></scrpt>
 </head>
 <h1>JavaScriptの変数とデバッガを理解09-</h1>
@@ -85,3 +103,24 @@ oneclick="change();"></p>
 <img src="picture.jpg" id="picture" alt="画像"
 width="100>
 </body></html>
+
+<script src="ex09-5.js"></script>
+</head>
+<h1>「ふしぎなポケット」（作ままどみちお）</h1>
+<p><input type="button" value="ポケット"
+oneclick="knock();"></p>
+<ul id="biscuit">
+<li>ポケットの中にはビスケットが１つ</li>
+</ul>
+</body></html>
+
+<script src="ex09-6.js"></script>
+</head>
+<h1>while文の練習</h1>
+<p>下のボタンを押すと数字が表示されます</p>
+<p><input type="button" value="実行ボタン"
+oneclick="addCount();"></p>
+</body></html>
+
+
+
